@@ -1,0 +1,15 @@
+##################################
+# 1 Don't display video
+
+> src/demo.c
+- 210  display_in_thread(0);
++ 210  //display_in_thread(0);
+
+> src/image.c
+- 239~253  draw_box_width( ... if(alphabet) ... if(masks) ... }
+
+###################################
+# 2 Print coodinate
+
+> src/image.c
++ 227 printf("left: %d, right: %d, top: %d ,bot: %d\n\n", left, right, top, bot);
